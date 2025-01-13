@@ -44,8 +44,8 @@ router.post('/checkout/stripe', async (req, res) => {
       payment_method_types: ['card'],
       line_items: items,
       mode: 'payment',
-      success_url: 'http://localhost:5173/success',
-      cancel_url: 'http://localhost:5173/failed',
+      success_url: 'https://ecommerce-abhay-dixits-projects-4f073080.vercel.app/success',
+      cancel_url: 'https://ecommerce-abhay-dixits-projects-4f073080.vercel.app/failed',
     });
 
     const order = new Order({
